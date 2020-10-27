@@ -23,6 +23,8 @@ gem 'devise'
 gem 'annotate'
 # Add feathericons to the app
 gem 'feathericon-rails'
+# Used for dropdowns
+gem 'jquery-turbolinks'
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
