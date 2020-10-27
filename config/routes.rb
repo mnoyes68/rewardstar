@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
+  devise_for :users
   resources :credit_cards
-  resources :users
   get 'welcome/index'
 
   root 'welcome#index'
