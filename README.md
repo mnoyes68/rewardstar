@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+**Setup**
 
-Things you may want to cover:
+Note: these steps were used for a Mac.
 
-* Ruby version
+ * Clone the repository
+ * Install rvm if not yet obtained
+ * Use ruby version 2.6.5
+```
+rvm install 2.6.5
+rvm use 2.6.5
+```
+ * Install dependencies
+```
+bundle install
+yarn install
+```
+ * Setup Database
+```
+# Note this uses PostgresQL, you will need have this installed as well.
+rake db:setup
+```
+ * Start server
+```
+rails s
+```
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+If you see a welcome page you are good to go
